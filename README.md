@@ -1,79 +1,56 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<div align="center">
+    <img src="./screenshot/logo.png" width="128" height="128" style="display: block; margin: 0 auto"/>
+    <h1> Jeni GIF </h1>
+    <h3>Welcome to JeniGIF</h3> 
+    <p> Your ultimate GIF companion! Share, search, and download your favorite GIFs in a tap! 🎉✨</p>
+</div>
 
-# Getting Started
+---
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<p align="center">
+  <img src="./screenshot/1.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/2.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/3.png" width="30%" onclick="openGif(this)" />
 
-## Step 1: Start the Metro Server
+  <img src="./screenshot/4.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/5.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/6.png" width="30%" onclick="openGif(this)" />
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+  <img src="./screenshot/7.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/8.png" width="30%" onclick="openGif(this)" />
+  <img src="./screenshot/9.png" width="30%" onclick="openGif(this)" />
+</p>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+<script>
+  function openGif(gif) {
+    const gifSrc = gif.src;
+    const action = prompt("Do you want to Share or Download this GIF? Type 'Share' or 'Download'").toLowerCase();
 
-```bash
-# using npm
-npm start
+    if (action === 'share') {
+      window.alert("GIF Shared: " + gifSrc);  // Replace with actual sharing functionality
+    } else if (action === 'download') {
+      window.location.href = gifSrc;  // This triggers the download of the GIF
+    } else {
+      window.alert("Invalid action. Please type 'Share' or 'Download'.");
+    }
+  }
+</script>
 
-# OR using Yarn
-yarn start
-```
+## 🎉 JeniGIF - Your Ultimate GIF Experience 🎬
+- 🔄 Search Any GIF
+- 📤 Share with Friends
+- 📥 Download Instantly
+- 🎯 Filter Your Results
+- 🖼️ Easy Access to All GIFs
+- ✨ Customizable Experience
+- 🎉 Endless Entertainment
 
-## Step 2: Start your Application
+## 📥 Download
+[<img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png"
+    alt="Get it on GitHub"
+    height="80">](https://github.com/Jeevesh0207/JeniGIF/releases/tag/v.1.0.0)
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## 📢 Disclaimer
+This project and its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with any GIF-related service providers.
 
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by the respective owners.

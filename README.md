@@ -21,6 +21,11 @@
   <img src="./screenshot/9.png" width="30%" onclick="openGif(this)" />
 </p>
 
+## Features
+- **Tap on a GIF to Play:** Simply tap on any GIF to play it and enjoy the animation.
+- **Press on a GIF to Open Options:** Press on any GIF to access options for sharing or downloading it.
+- **Search GIFs to Filter:** You can easily search for specific GIFs and filter results based on your preferences.
+
 ## 🎉 JeniGIF - Your Ultimate GIF Experience 🎬
 - 🔄 Search Any GIF
 - 📤 Share with Friends

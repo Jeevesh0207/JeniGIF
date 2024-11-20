@@ -21,21 +21,6 @@
   <img src="./screenshot/9.png" width="30%" onclick="openGif(this)" />
 </p>
 
-<script>
-  function openGif(gif) {
-    const gifSrc = gif.src;
-    const action = prompt("Do you want to Share or Download this GIF? Type 'Share' or 'Download'").toLowerCase();
-
-    if (action === 'share') {
-      window.alert("GIF Shared: " + gifSrc);  // Replace with actual sharing functionality
-    } else if (action === 'download') {
-      window.location.href = gifSrc;  // This triggers the download of the GIF
-    } else {
-      window.alert("Invalid action. Please type 'Share' or 'Download'.");
-    }
-  }
-</script>
-
 ## 🎉 JeniGIF - Your Ultimate GIF Experience 🎬
 - 🔄 Search Any GIF
 - 📤 Share with Friends
